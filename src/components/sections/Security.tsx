@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   Lock,
   Settings,
@@ -58,8 +59,9 @@ export default function Security() {
               {SECURITY_SERVICES.map((service) => {
                 const Icon = iconMap[service.icon];
                 return (
-                  <div
+                  <Link
                     key={service.text}
+                    href={`/sicherheit/${service.slug}`}
                     className="flex items-center gap-4 rounded-xl border border-gray-100 bg-gray-50/60 px-5 py-4 transition-all duration-200 hover:border-gold/25 hover:bg-white hover:shadow-sm"
                   >
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-gold/15 to-gold/5 ring-1 ring-gold/15">
@@ -68,7 +70,7 @@ export default function Security() {
                     <span className="text-base font-medium text-gray-900">
                       {service.text}
                     </span>
-                  </div>
+                  </Link>
                 );
               })}
             </div>

@@ -12,25 +12,14 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl">🔑</span>
               <span className="font-heading text-xl font-bold text-white">
-                Magic Key
+                Ausgesperrt Wien
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
               Ihr zuverlässiger Schlüsseldienst in Wien und Klosterneuburg.
-              Schnell, fair, professionell — 24 Stunden am Tag, 365 Tage im
+              Schnell, fair, professionell, 24 Stunden am Tag, 365 Tage im
               Jahr.
             </p>
-            <a
-              href={COMPANY.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
-            >
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-              Facebook
-            </a>
           </div>
 
           {/* Col 2: Navigation */}
@@ -105,19 +94,30 @@ export default function Footer() {
               Einsatzgebiete
             </h3>
             <ul className="mt-4 space-y-3">
-              {EINSATZGEBIETE.map((e) => (
+              {EINSATZGEBIETE.filter(
+                (e) => e.hauptstandort || ["1010", "1030", "1070", "1090", "1190", "1200", "Klosterneuburg"].includes(e.district)
+              ).map((e) => (
                 <li key={e.district}>
                   <Link
-                    href="/einsatzgebiete"
+                    href={`/einsatzgebiete/${e.slug}`}
                     className="text-sm text-gray-300 transition-colors hover:text-white"
                   >
                     📍{" "}
                     {e.district === "Klosterneuburg"
                       ? "Klosterneuburg"
                       : `${e.district} Wien — ${e.name}`}
+                    {e.hauptstandort && " ⭐"}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/einsatzgebiete"
+                  className="text-sm font-semibold text-primary-light transition-colors hover:text-white"
+                >
+                  Alle Bezirke →
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 sm:flex-row">
           <p className="text-sm text-gray-500">
-            © 2025 {COMPANY.legalName}. Alle Rechte vorbehalten.
+            © 2026 {COMPANY.legalName}. Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-6">
             <Link

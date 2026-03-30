@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   DoorOpen,
   KeyRound,
@@ -13,6 +14,7 @@ import {
   AlertTriangle,
   Lightbulb,
   Phone,
+  ArrowRight,
 } from "lucide-react";
 import { SERVICES, COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
@@ -21,7 +23,7 @@ import SectionReveal from "@/components/SectionReveal";
 export const metadata: Metadata = {
   title: "Leistungen",
   description:
-    "Alle Leistungen von Magic Key: Türöffnung, Schlosswechsel, Zylindertausch, Sicherheitsberatung und mehr. 24/7 in Wien und Klosterneuburg.",
+    "Alle Leistungen von Ausgesperrt Wien: Türöffnung, Schlosswechsel, Zylindertausch, Sicherheitsberatung und mehr. 24/7 in Wien und Klosterneuburg.",
 };
 
 const iconMap: Record<string, React.ElementType> = {
@@ -118,13 +120,22 @@ export default function LeistungenPage() {
                       <p className="mt-3 text-base leading-relaxed text-text-secondary">
                         {detailed}
                       </p>
-                      <a
-                        href={`tel:${COMPANY.phoneRaw}`}
-                        className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-light"
-                      >
-                        <Phone className="h-4 w-4" />
-                        Jetzt anrufen: {COMPANY.phone}
-                      </a>
+                      <div className="mt-4 flex flex-wrap items-center gap-4">
+                        <Link
+                          href={`/leistungen/${service.slug}`}
+                          className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-light"
+                        >
+                          Mehr erfahren
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                        <a
+                          href={`tel:${COMPANY.phoneRaw}`}
+                          className="inline-flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors hover:text-primary"
+                        >
+                          <Phone className="h-4 w-4" />
+                          {COMPANY.phone}
+                        </a>
+                      </div>
                     </div>
                   </div>
 

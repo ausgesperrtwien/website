@@ -59,7 +59,7 @@ export default function Header() {
               </div>
               <div className="flex flex-col">
                 <span className="font-heading text-lg font-bold leading-tight text-text-primary">
-                  Magic Key
+                  Ausgesperrt Wien
                 </span>
                 <span className="text-[9px] font-semibold uppercase tracking-[0.15em] text-text-muted">
                   Schlüsseldienst Wien
@@ -110,7 +110,7 @@ export default function Header() {
             <div className="flex items-center gap-2 lg:hidden">
               <a
                 href={`tel:${COMPANY.phoneRaw}`}
-                className="animate-pulse-emergency flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-emergency to-[#ef4444] text-white shadow-lg shadow-emergency/30"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#D4A017] to-[#F5D060] text-white shadow-lg shadow-gold/30"
                 aria-label="Jetzt anrufen"
               >
                 <Phone className="h-5 w-5" />

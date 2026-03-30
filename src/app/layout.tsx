@@ -22,11 +22,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Magic Key — Schlüsseldienst Wien | 24h Aufsperrdienst",
-    template: "%s | Magic Key Schlüsseldienst Wien",
+    default: "Ausgesperrt Wien — Schlüsseldienst Wien | 24h Aufsperrdienst",
+    template: "%s | Ausgesperrt Wien Schlüsseldienst Wien",
   },
   description:
-    "Ihr zuverlässiger Schlüsseldienst in Wien und Klosterneuburg. 24/7 Notdienst, faire Fixpreise ab 60€, keine Anfahrtskosten. In 15–20 Minuten vor Ort. ☎ +43 676 911 14 12",
+    "Ihr zuverlässiger Schlüsseldienst in Wien und Klosterneuburg. 24/7 Notdienst, faire Fixpreise ab 60€, keine Anfahrtskosten. In 15–20 Minuten vor Ort. ☎ +43 660 172 63 00",
   keywords: [
     "Schlüsseldienst Wien",
     "Aufsperrdienst Wien",
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     "24h Schlüsseldienst",
     "Schlüsseldienst 1200 Wien",
     "Aufsperrdienst Klosterneuburg",
-    "Magic Key",
+    "Ausgesperrt Wien",
   ],
   openGraph: {
-    title: "Magic Key — Schlüsseldienst Wien | 24h Aufsperrdienst",
+    title: "Ausgesperrt Wien — Schlüsseldienst Wien | 24h Aufsperrdienst",
     description:
-      "Ausgesperrt? In 15–20 Minuten sind wir bei Ihnen. Faire Fixpreise, keine versteckten Kosten. ☎ +43 676 911 14 12",
+      "Ausgesperrt? In 15–20 Minuten sind wir bei Ihnen. Faire Fixpreise, keine versteckten Kosten. ☎ +43 660 172 63 00",
     locale: "de_AT",
     type: "website",
   },

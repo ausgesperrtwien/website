@@ -16,7 +16,7 @@ export default function EinsatzgebietePreview() {
               Unser Einsatzgebiet
             </h2>
             <p className="mt-4 text-lg text-text-secondary">
-              Wien und Klosterneuburg — wir kommen zu Ihnen.
+              Wien und Klosterneuburg, wir kommen zu Ihnen.
             </p>
           </div>
         </SectionReveal>
@@ -25,7 +25,7 @@ export default function EinsatzgebietePreview() {
           {EINSATZGEBIETE.map((area, i) => (
             <SectionReveal key={area.district} delay={i * 0.05}>
               <Link
-                href="/einsatzgebiete"
+                href={`/einsatzgebiete/${area.slug}`}
                 className={cn(
                   "group flex items-start gap-3 rounded-xl border p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover",
                   area.hauptstandort

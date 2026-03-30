@@ -8,7 +8,7 @@ import Contact from "@/components/sections/Contact";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Magic Key Schlüsseldienst Wien. ☎ +43 676 911 14 12. Klosterneuburger Straße 7, 1200 Wien. 24/7 erreichbar.",
+    "Kontaktieren Sie Ausgesperrt Wien Schlüsseldienst Wien. ☎ +43 676 911 14 12. Klosterneuburger Straße 7, 1200 Wien. 24/7 erreichbar.",
 };
 
 export default function KontaktPage() {
@@ -112,7 +112,7 @@ export default function KontaktPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Magic Key Standort — Klosterneuburger Straße 7, 1200 Wien"
+                title="Ausgesperrt Wien Standort — Klosterneuburger Straße 7, 1200 Wien"
               />
             </div>
           </SectionReveal>

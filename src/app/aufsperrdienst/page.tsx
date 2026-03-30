@@ -1,48 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Phone, Check, Clock, Shield, Star, AlertCircle } from "lucide-react";
-import { COMPANY, IMAGES } from "@/lib/constants";
+import Link from "next/link";
+import { Phone, Check, Clock, Shield, Star, AlertCircle, ArrowRight } from "lucide-react";
+import { COMPANY, IMAGES, SITUATIONS } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
 
 export const metadata: Metadata = {
   title: "24h Aufsperrdienst",
   description:
-    "Ausgesperrt? Schlüssel verloren? Tür zugefallen? Magic Key — Ihr 24h Aufsperrdienst in Wien und Klosterneuburg. In 15–20 Minuten vor Ort. ☎ +43 676 911 14 12",
+    "Ausgesperrt? Schlüssel verloren? Tür zugefallen? Ausgesperrt Wien — Ihr 24h Aufsperrdienst in Wien und Klosterneuburg. In 15–20 Minuten vor Ort. ☎ +43 676 911 14 12",
 };
 
-const situations = [
-  {
-    title: "Tür zugefallen",
-    text: "Ein leichter Windzug genügt und die Tür fällt ins Schloss. Natürlich liegt Ihr Schlüssel gerade jetzt in der Wohnung. Kein Grund zur Panik — wir öffnen Ihre Tür schnell und beschädigungsfrei.",
-    icon: AlertCircle,
-  },
-  {
-    title: "Schlüssel verloren",
-    text: "Sie haben Ihren Schlüssel verloren oder verlegt? Wir öffnen Ihre Tür professionell und empfehlen anschließend einen Zylindertausch für Ihre Sicherheit.",
-    icon: Shield,
-  },
-  {
-    title: "Schlüssel abgebrochen",
-    text: "Ihr Schlüssel ist im Schloss abgebrochen? Unser Techniker entfernt den abgebrochenen Schlüssel professionell — in den meisten Fällen ohne das Schloss zu beschädigen.",
-    icon: Star,
-  },
-  {
-    title: "Schloss klemmt oder defekt",
-    text: "Ihr Schloss lässt sich nicht mehr drehen? Es klemmt oder ist komplett defekt? Wir reparieren oder tauschen Ihr Schloss fachgerecht vor Ort aus.",
-    icon: Clock,
-  },
-  {
-    title: "Schlüssel steckt von innen",
-    text: "Ein Familienmitglied hat die Wohnung von innen versperrt und den Schlüssel stecken lassen? Auch das ist für uns kein Problem.",
-    icon: Shield,
-  },
-  {
-    title: "Nach Einbruch",
-    text: "Nach einem Einbruch machen wir Ihre Tür sofort wieder verschließbar. Wir ersetzen abgedrehte Zylinder und aufgebrochene Schlösser — schnell und zuverlässig.",
-    icon: AlertCircle,
-  },
-];
+const iconMap = {
+  AlertCircle,
+  Shield,
+  Star,
+  Clock,
+} as const;
 
 export default function AufsperrdienstPage() {
   return (
@@ -62,7 +37,7 @@ export default function AufsperrdienstPage() {
               </h1>
               <p className="mt-4 max-w-lg text-lg text-white/80">
                 Als professioneller 24 Stunden Notdienst stehen wir Ihnen in
-                Wien und Klosterneuburg an 7 Tagen die Woche zur Verfügung —
+                Wien und Klosterneuburg an 7 Tagen die Woche zur Verfügung, 
                 das zu einem fairen Preis.
               </p>
 
@@ -108,27 +83,37 @@ export default function AufsperrdienstPage() {
                 In welcher Situation sind Sie?
               </h2>
               <p className="mt-4 text-lg text-text-secondary">
-                Egal was passiert ist — wir sind in 15–20 Minuten bei Ihnen.
+                Egal was passiert ist, wir sind in 15–20 Minuten bei Ihnen.
               </p>
             </div>
           </SectionReveal>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {situations.map((sit, i) => (
-              <SectionReveal key={sit.title} delay={i * 0.08}>
-                <div className="h-full rounded-xl border border-border bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-bg-accent">
-                    <sit.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-heading text-lg font-bold text-text-primary">
-                    {sit.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-                    {sit.text}
-                  </p>
-                </div>
-              </SectionReveal>
-            ))}
+            {SITUATIONS.map((sit, i) => {
+              const Icon = iconMap[sit.icon as keyof typeof iconMap];
+              return (
+                <SectionReveal key={sit.slug} delay={i * 0.08}>
+                  <Link
+                    href={`/aufsperrdienst/${sit.slug}`}
+                    className="group block h-full rounded-xl border border-border bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
+                  >
+                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-bg-accent">
+                      <Icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-heading text-lg font-bold text-text-primary">
+                      {sit.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                      {sit.shortText}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary transition-colors group-hover:text-gold">
+                      Mehr erfahren
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </Link>
+                </SectionReveal>
+              );
+            })}
           </div>
         </div>
       </section>
