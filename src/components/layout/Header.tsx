@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Key, Shield } from "lucide-react";
+import { Menu, X, Phone, Shield } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -52,19 +53,18 @@ export default function Header() {
           <div className="mx-auto px-6 lg:px-10">
             <div className="flex h-[64px] items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="group flex items-center gap-3 shrink-0">
-              <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-light shadow-md shadow-primary/20 transition-transform duration-300 group-hover:scale-110">
-                <Key className="h-5 w-5 text-white" strokeWidth={2.5} />
-                <div className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full border-[1.5px] border-white bg-gold" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading text-lg font-bold leading-tight text-text-primary">
-                  Ausgesperrt Wien
-                </span>
-                <span className="text-[9px] font-semibold uppercase tracking-[0.15em] text-text-muted">
-                  Schlüsseldienst Wien
-                </span>
-              </div>
+            <Link href="/" className="group flex items-center gap-2.5 shrink-0 transition-opacity duration-200 hover:opacity-80">
+              <Image
+                src="/logo.png"
+                alt="Ausgesperrt Wien – Schlüsseldienst"
+                width={160}
+                height={48}
+                className="h-12 w-auto object-contain"
+                priority
+              />
+              <span className="font-heading text-base font-bold text-text-primary leading-tight hidden sm:block">
+                Ausgesperrt Wien
+              </span>
             </Link>
 
             {/* Desktop Nav */}
@@ -180,7 +180,7 @@ export default function Header() {
                 >
                   <a
                     href={`tel:${COMPANY.phoneRaw}`}
-                    className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emergency to-[#ef4444] px-4 py-4 text-base font-bold text-white shadow-lg shadow-emergency/25"
+                    className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#D4A017] to-[#F5D060] px-4 py-4 text-base font-bold text-white shadow-lg shadow-gold/25"
                   >
                     <Phone className="h-5 w-5" />
                     Jetzt anrufen: {COMPANY.phone}

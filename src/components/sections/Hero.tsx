@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { COMPANY, IMAGES } from "@/lib/constants";
 import KeyAnimation from "@/components/KeyAnimation";
 import CallButton from "@/components/CallButton";
+import FloatingReviews from "@/components/FloatingReviews";
 import Link from "next/link";
 import { Check } from "lucide-react";
 
@@ -87,6 +88,9 @@ export default function Hero() {
                 </div>
               ))}
             </div>
+
+            {/* Mobile: Floating Reviews below hero content */}
+            <FloatingReviews variant="mobile" />
           </motion.div>
 
           {/* Right: Key Animation */}
@@ -100,6 +104,9 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {/* Desktop: Floating Reviews positioned absolute */}
+      <FloatingReviews variant="desktop" />
 
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />

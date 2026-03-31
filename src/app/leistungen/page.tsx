@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   DoorOpen,
@@ -72,8 +73,15 @@ export default function LeistungenPage() {
   return (
     <div className="pt-[72px]">
       {/* Hero */}
-      <section className="bg-primary py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
+        <Image
+          src="/leistungen.jpg"
+          alt="Leistungen Ausgesperrt Wien"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
               Unsere Leistungen

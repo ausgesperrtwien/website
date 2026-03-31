@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Check, ChevronRight } from "lucide-react";
 import { COMPANY, EINSATZGEBIETE } from "@/lib/constants";
@@ -61,8 +62,15 @@ export default function EinsatzgebietePage() {
 
       <div className="pt-[72px]">
         {/* Hero */}
-        <section className="bg-primary py-16 lg:py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
+          <Image
+            src="/einsatzgebiete.jpg"
+            alt="Einsatzgebiete Ausgesperrt Wien"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
                 Schlüsseldienst in allen Wiener Bezirken

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, Globe } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
@@ -15,8 +16,15 @@ export default function KontaktPage() {
   return (
     <div className="pt-[72px]">
       {/* Hero */}
-      <section className="bg-primary py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
+        <Image
+          src="/kontakt.jpg"
+          alt="Kontakt Ausgesperrt Wien"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
               Kontakt
@@ -105,14 +113,14 @@ export default function KontaktPage() {
           <SectionReveal>
             <div className="overflow-hidden rounded-2xl shadow-card">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.5!2d16.358!3d48.234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07952c8a1e4f%3A0x9c2bcbf7d30fbf2e!2sKlosterneuburger%20Str.%207%2C%201200%20Wien%2C%20Austria!5e0!3m2!1sde!2sat!4v1"
+                src={COMPANY.mapsEmbed}
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ausgesperrt Wien Standort — Klosterneuburger Straße 7, 1200 Wien"
+                title="Ausgesperrt Wien Standort — Schmalzhofgasse 10/2/27, 1060 Wien"
               />
             </div>
           </SectionReveal>

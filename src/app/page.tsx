@@ -5,8 +5,6 @@ import Services from "@/components/sections/Services";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Pricing from "@/components/sections/Pricing";
 import Security from "@/components/sections/Security";
-import Reviews from "@/components/sections/Reviews";
-import PhotoCarousel from "@/components/sections/PhotoCarousel";
 import FAQ from "@/components/sections/FAQ";
 import EinsatzgebietePreview from "@/components/sections/EinsatzgebietePreview";
 import Contact from "@/components/sections/Contact";
@@ -20,11 +18,9 @@ export default function HomePage() {
       <Services />
       <HowItWorks />
       <Pricing />
-      <Reviews />
       <Security />
-      <PhotoCarousel />
-      <FAQ />
       <EinsatzgebietePreview />
+      <FAQ />
       <Contact />
     </>
   );

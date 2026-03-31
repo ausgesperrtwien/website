@@ -23,9 +23,10 @@ export default function CallButton({
 
   return (
     <a
+      data-main-cta
       href={`tel:${COMPANY.phoneRaw}`}
       className={cn(
-        "inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-gradient-to-r from-[#D4A017] to-[#F5D060] font-bold text-white shadow-lg shadow-gold/25 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-gold/35",
+        "inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#D4A017] to-[#F5D060] font-bold text-white shadow-lg shadow-gold/25 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-gold/35 whitespace-nowrap max-[480px]:whitespace-normal max-[480px]:text-center",
         sizeClasses[size],
         className
       )}

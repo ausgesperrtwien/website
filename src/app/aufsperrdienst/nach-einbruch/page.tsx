@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Check,
@@ -133,7 +134,14 @@ export default function NachEinbruchPage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <Image
+          src="/nach-einbruch.jpg"
+          alt="Hilfe nach Einbruch Wien — Aufsperrdienst"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emergency px-4 py-1.5 text-sm font-semibold text-white">
               🚨 24h Notdienst — Nach Einbruch

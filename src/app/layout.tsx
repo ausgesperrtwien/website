@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     default: "Ausgesperrt Wien — Schlüsseldienst Wien | 24h Aufsperrdienst",
     template: "%s | Ausgesperrt Wien Schlüsseldienst Wien",
   },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   description:
     "Ihr zuverlässiger Schlüsseldienst in Wien und Klosterneuburg. 24/7 Notdienst, faire Fixpreise ab 60€, keine Anfahrtskosten. In 15–20 Minuten vor Ort. ☎ +43 660 172 63 00",
   keywords: [

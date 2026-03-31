@@ -18,7 +18,7 @@ export const COMPANY = {
   aufsicht: "Magistratisches Bezirksamt des VI Bezirks",
   gegenstand: "Schlüsseldienst, Aufsperrdienst und Montage",
   mapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.3!2d16.358!3d48.234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079f1f0d7f0d%3A0x0!2sKlosterneuburger+Stra%C3%9Fe+7%2C+1200+Wien!5e0!3m2!1sde!2sat!4v1",
+    "https://maps.google.com/maps?q=Schmalzhofgasse+10%2F2%2F27+1060+Wien+Austria&t=&z=16&ie=UTF8&iwloc=&output=embed",
 } as const;
 
 export const NAV_LINKS = [
@@ -549,8 +549,7 @@ export const IMAGES = {
     "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80",
   security:
     "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
-  handwerker:
-    "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&q=80",
+  handwerker: "/aufsperrdienst-hero.jpg",
   beratung:
     "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=800&q=80",
   wien: "https://images.unsplash.com/photo-1516550893885-985c836c06fe?w=1200&q=80",

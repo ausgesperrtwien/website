@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Check, Clock, Shield, Star, AlertCircle, ArrowRight } from "lucide-react";
-import { COMPANY, IMAGES, SITUATIONS } from "@/lib/constants";
+import { COMPANY, SITUATIONS } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
 
@@ -24,9 +24,15 @@ export default function AufsperrdienstPage() {
     <div className="pt-[72px]">
       {/* Emergency Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
+        <Image
+          src="/aufsperrdienst-hero.jpg"
+          alt="Aufsperrdienst Wien — 24h Notdienst"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emergency px-4 py-1.5 text-sm font-semibold text-white">
                 🚨 24h Notdienst
               </div>
@@ -59,17 +65,6 @@ export default function AufsperrdienstPage() {
                   ))}
                 </div>
               </div>
-            </div>
-
-            <div className="relative hidden aspect-[4/3] overflow-hidden rounded-2xl lg:block">
-              <Image
-                src={IMAGES.handwerker}
-                alt="Professioneller Aufsperrdienst bei der Arbeit"
-                fill
-                className="object-cover"
-                sizes="50vw"
-              />
-            </div>
           </div>
         </div>
       </section>
