@@ -93,7 +93,6 @@ export default function SicherheitPage() {
                 <CallButton
                   size="lg"
                   label="Kostenlose Beratung: +43 660 172 63 00"
-                  className="w-full sm:w-auto"
                 />
               </div>
             </div>
