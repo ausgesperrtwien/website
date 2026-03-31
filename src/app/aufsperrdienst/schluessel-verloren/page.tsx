@@ -130,13 +130,16 @@ export default function SchluesselVerlorenPage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
-        <Image
-          src="/schluessel-verloren.jpg"
-          alt="Schlüssel verloren Wien — Aufsperrdienst"
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/schluessel-verloren.jpg"
+            alt="Schlüssel verloren Wien — Aufsperrdienst"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emergency px-4 py-1.5 text-sm font-semibold text-white">

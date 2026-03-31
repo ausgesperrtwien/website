@@ -17,13 +17,16 @@ export default function KontaktPage() {
     <div className="pt-[72px]">
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
-        <Image
-          src="/kontakt.jpg"
-          alt="Kontakt Ausgesperrt Wien"
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/kontakt.jpg"
+            alt="Kontakt Ausgesperrt Wien"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
