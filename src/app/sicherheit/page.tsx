@@ -18,7 +18,7 @@ import SectionReveal from "@/components/SectionReveal";
 export const metadata: Metadata = {
   title: "Sicherheit",
   description:
-    "Sicherheitsschlösser, Zylinder, Beschläge und Einbruchschutz von Ausgesperrt Wien. Wir installieren Produkte von EVVA, DOM, ABUS, dormakaba. Kostenlose Beratung.",
+    "Sicherheitsschlösser, Zylinder, Beschläge und Einbruchschutz von Ausgesperrt Vienna. Wir installieren Produkte von EVVA, DOM, ABUS, dormakaba. Kostenlose Beratung.",
 };
 
 const iconMap: Record<string, React.ElementType> = {
@@ -86,7 +86,7 @@ export default function SicherheitPage() {
                 <span className="text-gold-light">Ihr Zuhause</span>
               </h1>
               <p className="mt-4 max-w-lg text-lg text-white/80">
-                Die Einbruchrate in Wien sollte man nicht unterschätzen. Ausgesperrt Wien hat sich auf hochwertige Sicherheitsprodukte spezialisiert,
+                Die Einbruchrate in Wien sollte man nicht unterschätzen. Ausgesperrt Vienna hat sich auf hochwertige Sicherheitsprodukte spezialisiert,
                 die wir fachkundig für Sie einbauen.
               </p>
               <div className="mt-8">

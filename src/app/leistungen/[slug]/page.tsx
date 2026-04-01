@@ -56,9 +56,9 @@ const serviceData: Record<
   }
 > = {
   tueroeffnung: {
-    metaTitle: "Türöffnung Wien — 24h Aufsperrdienst | Ab 60€ Fixpreis",
+    metaTitle: "Türöffnung Wien — 24h Aufsperrdienst | Ab 79€ Fixpreis",
     metaDescription:
-      "Professionelle Türöffnung in Wien ✓ Beschädigungsfrei ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 60€ ✓ Keine Anfahrtskosten ✓ 24/7 Notdienst. Jetzt anrufen!",
+      "Professionelle Türöffnung in Wien ✓ Beschädigungsfrei ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 79€ ✓ Keine Anfahrtskosten ✓ 24/7 Notdienst. Jetzt anrufen!",
     keywords: [
       "Türöffnung Wien",
       "Tür öffnen lassen Wien",
@@ -74,7 +74,7 @@ const serviceData: Record<
       "Eine zugefallene Tür ist ärgerlich — aber kein Grund zur Panik. Unser professioneller Aufsperrdienst führt Türöffnungen aller Art durch: zugefallene Türen, abgeschlossene Wohnungs- oder Haustüren, Doppelfalztüren, Türen mit Mehrfachverriegelungen und Zusatzschlösser. In den meisten Fällen ist eine beschädigungsfreie Öffnung möglich. Unsere erfahrenen Techniker nutzen professionelles Spezialwerkzeug und verfügen über jahrelange Erfahrung im Bereich Öffnungstechnik. Tag und Nacht, 365 Tage im Jahr.",
     benefits: [
       "Beschädigungsfreie Öffnung in über 95% der Fälle",
-      "Fixpreis ab 60€ — vorab am Telefon vereinbart",
+      "Fixpreis ab 79€ — vorab am Telefon vereinbart",
       "In 15–20 Minuten bei Ihnen in Wien",
       "Keine Anfahrtskosten",
       "24/7 erreichbar — auch nachts und am Wochenende",
@@ -87,7 +87,7 @@ const serviceData: Record<
       { step: "Fertig", text: "Sie sind wieder in Ihrer Wohnung — zum vereinbarten Fixpreis, ohne Überraschungen." },
     ],
     faq: [
-      { q: "Was kostet eine Türöffnung in Wien?", a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 60€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart." },
+      { q: "Was kostet eine Türöffnung in Wien?", a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart." },
       { q: "Wird meine Tür bei der Öffnung beschädigt?", a: "In über 95% der Fälle können wir Ihre Tür beschädigungsfrei öffnen. Sollte ausnahmsweise ein anderer Weg nötig sein, besprechen wir das vorher mit Ihnen." },
       { q: "Wie schnell sind Sie bei einer Türöffnung vor Ort?", a: "In der Regel sind wir in 15–20 Minuten bei Ihnen. Die genaue Wartezeit teilen wir Ihnen am Telefon mit." },
     ],
@@ -124,7 +124,7 @@ const serviceData: Record<
     ],
     faq: [
       { q: "Muss ich das Schloss wechseln, wenn ich meinen Schlüssel verloren habe?", a: "Wir empfehlen es aus Sicherheitsgründen dringend. Wenn der Schlüssel in falsche Hände gerät, ist Ihre Wohnung nicht mehr sicher. Wir tauschen den Zylinder direkt vor Ort." },
-      { q: "Was kostet die Türöffnung bei verlorenem Schlüssel?", a: "Die Türöffnung beginnt ab 60€. Ein zusätzlicher Zylindertausch wird vorab mit Ihnen besprochen." },
+      { q: "Was kostet die Türöffnung bei verlorenem Schlüssel?", a: "Die Türöffnung beginnt ab 79€. Ein zusätzlicher Zylindertausch wird vorab mit Ihnen besprochen." },
     ],
   },
   "schluessel-abgebrochen": {
@@ -728,7 +728,7 @@ export default async function ServicePage({ params }: Props) {
                     </div>
                     <div className="flex items-center gap-2">
                       <Euro className="h-3.5 w-3.5" />
-                      <span>Fixpreise ab 60€</span>
+                      <span>Fixpreise ab 79€</span>
                     </div>
                   </div>
                 </div>

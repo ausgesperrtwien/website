@@ -24,7 +24,7 @@ import SectionReveal from "@/components/SectionReveal";
 export const metadata: Metadata = {
   title: "Leistungen",
   description:
-    "Alle Leistungen von Ausgesperrt Wien: Türöffnung, Schlosswechsel, Zylindertausch, Sicherheitsberatung und mehr. 24/7 in Wien und Klosterneuburg.",
+    "Alle Leistungen von Ausgesperrt Vienna: Türöffnung, Schlosswechsel, Zylindertausch, Sicherheitsberatung und mehr. 24/7 in Wien und Klosterneuburg.",
 };
 
 const iconMap: Record<string, React.ElementType> = {
@@ -77,7 +77,7 @@ export default function LeistungenPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/leistungen.jpg"
-            alt="Leistungen Ausgesperrt Wien"
+            alt="Leistungen Ausgesperrt Vienna"
             fill
             className="object-cover opacity-20"
             sizes="100vw"

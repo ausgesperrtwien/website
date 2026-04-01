@@ -7,7 +7,7 @@ import CallButton from "@/components/CallButton";
 export const metadata: Metadata = {
   title: "Blog — Tipps & Ratgeber rund um Schlüsseldienst in Wien",
   description:
-    "Nützliche Tipps, Ratgeber und Infos rund um Schlüsseldienst, Türöffnung, Einbruchschutz und Sicherheit in Wien. Vom Experten-Team von Ausgesperrt Wien.",
+    "Nützliche Tipps, Ratgeber und Infos rund um Schlüsseldienst, Türöffnung, Einbruchschutz und Sicherheit in Wien. Vom Experten-Team von Ausgesperrt Vienna.",
 };
 
 const posts = [

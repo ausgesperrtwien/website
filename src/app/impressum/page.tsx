@@ -84,13 +84,6 @@ export default function ImpressumPage() {
 
             <div>
               <h3 className="font-heading text-lg font-bold text-text-primary">
-                Geschäftsführung
-              </h3>
-              <p>{COMPANY.gf}</p>
-            </div>
-
-            <div>
-              <h3 className="font-heading text-lg font-bold text-text-primary">
                 Unternehmensgegenstand
               </h3>
               <p>{COMPANY.gegenstand}</p>

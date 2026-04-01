@@ -45,7 +45,7 @@ const securityServiceData: Record<
 > = {
   sicherheitsschloesser: {
     metaTitle:
-      "Sicherheitsschlösser Wien — Einbau & Beratung | Ausgesperrt Wien",
+      "Sicherheitsschlösser Wien — Einbau & Beratung | Ausgesperrt Vienna",
     metaDescription:
       "Sicherheitsschlösser in Wien einbauen lassen ✓ Hochwertige Markenschlösser ✓ Einbruchschutz für Wohnungs- & Haustüren ✓ Kostenlose Beratung ✓ Faire Fixpreise. Jetzt anrufen!",
     keywords: [
@@ -59,7 +59,7 @@ const securityServiceData: Record<
       "Schlüsseldienst Sicherheitsschloss",
     ],
     heroSubtitle:
-      "Hochwertige Sicherheitsschlösser für Wohnungs- und Haustüren in Wien — fachkundig installiert von Ausgesperrt Wien.",
+      "Hochwertige Sicherheitsschlösser für Wohnungs- und Haustüren in Wien — fachkundig installiert von Ausgesperrt Vienna.",
     longDescription:
       "Ein sicheres Schloss ist die Grundlage für den Schutz Ihres Zuhauses. Wir installieren hochwertige Sicherheitsschlösser führender Hersteller wie EVVA, DOM, ABUS und dormakaba, die höchsten Einbruchschutz bieten. Ob für Wohnungstüren, Haustüren oder Geschäftstüren — unsere Techniker beraten Sie individuell und bauen das passende Sicherheitsschloss fachgerecht ein. Alle unsere Schlösser erfüllen die aktuellen Sicherheitsstandards und bieten Schutz gegen gängige Einbruchsmethoden wie Picking, Bohren und Aufbrechen.",
     benefits: [
@@ -371,7 +371,7 @@ const securityServiceData: Record<
   },
   briefkastenschloss: {
     metaTitle:
-      "Briefkastenschloss Wien — Öffnung & Austausch | Ausgesperrt Wien",
+      "Briefkastenschloss Wien — Öffnung & Austausch | Ausgesperrt Vienna",
     metaDescription:
       "Briefkastenschloss in Wien öffnen oder tauschen ✓ Schnell & unkompliziert ✓ Faire Preise ✓ Schloss defekt oder Schlüssel verloren ✓ Sofort-Service. Jetzt anrufen!",
     keywords: [

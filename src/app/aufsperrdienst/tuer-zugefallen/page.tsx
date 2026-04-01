@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "Ausgesperrt Tür zugefallen",
   ],
   openGraph: {
-    title: "Tür zugefallen Wien — 24h Notdienst | Ausgesperrt Wien",
+    title: "Tür zugefallen Wien — 24h Notdienst | Ausgesperrt Vienna",
     description:
-      "Tür zugefallen? In 15–20 Min sind wir bei Ihnen. Beschädigungsfreie Öffnung, faire Fixpreise ab 60€. ☎ Jetzt anrufen!",
+      "Tür zugefallen? In 15–20 Min sind wir bei Ihnen. Beschädigungsfreie Öffnung, faire Fixpreise ab 79€. ☎ Jetzt anrufen!",
     locale: "de_AT",
     type: "website",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Was kostet es, wenn die Tür zugefallen ist?",
-    a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 60€ (Mo–Fr, 8–18 Uhr). Abends, nachts und am Wochenende gelten Notdienstpreise. Der genaue Fixpreis wird vor Beginn am Telefon vereinbart.",
+    a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Abends, nachts und am Wochenende gelten Notdienstpreise. Der genaue Fixpreis wird vor Beginn am Telefon vereinbart.",
   },
   {
     q: "Wird meine Tür bei der Öffnung beschädigt?",
@@ -68,7 +68,7 @@ export default function TuerZugefallenPage() {
     "@type": "Service",
     name: "Türöffnung bei zugefallener Tür Wien",
     description:
-      "Professionelle Türöffnung bei zugefallener Tür in Wien. Beschädigungsfreie Öffnung in 15–20 Minuten, faire Fixpreise ab 60€.",
+      "Professionelle Türöffnung bei zugefallener Tür in Wien. Beschädigungsfreie Öffnung in 15–20 Minuten, faire Fixpreise ab 79€.",
     provider: {
       "@type": "LocalBusiness",
       name: COMPANY.name,
@@ -177,7 +177,7 @@ export default function TuerZugefallenPage() {
                 {[
                   "In 15–20 Min vor Ort",
                   "Beschädigungsfreie Öffnung",
-                  "Faire Fixpreise ab 60€",
+                  "Faire Fixpreise ab 79€",
                 ].map((pill) => (
                   <div
                     key={pill}
@@ -276,7 +276,7 @@ export default function TuerZugefallenPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionReveal>
             <h2 className="text-center font-heading text-3xl font-bold text-text-primary sm:text-4xl">
-              Warum Ausgesperrt Wien?
+              Warum Ausgesperrt Vienna?
             </h2>
           </SectionReveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

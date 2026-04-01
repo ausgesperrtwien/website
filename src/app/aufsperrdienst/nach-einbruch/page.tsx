@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Einbruchschutz Wien Notdienst",
   ],
   openGraph: {
-    title: "Nach Einbruch Wien — 24h Notdienst | Ausgesperrt Wien",
+    title: "Nach Einbruch Wien — 24h Notdienst | Ausgesperrt Vienna",
     description:
       "Einbruch? Wir machen Ihre Tür sofort wieder sicher. Schloss tauschen, Zylinder ersetzen — 24/7. ☎ Jetzt anrufen!",
     locale: "de_AT",

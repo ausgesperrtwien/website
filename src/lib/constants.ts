@@ -1,6 +1,6 @@
 export const COMPANY = {
-  name: "Ausgesperrt Wien",
-  legalName: "Ausgesperrt Wien Aufsperrdienst und Montage",
+  name: "Ausgesperrt Vienna",
+  legalName: "Ausgesperrt Vienna Aufsperrdienst und Montage",
   address: "Schmalzhofgasse 10/2/27",
   zip: "1060",
   city: "Wien",
@@ -73,7 +73,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1020 Wien — Leopoldstadt. Ausgesperrt im 2. Bezirk? Unser Aufsperrdienst ist in 15–20 Minuten bei Ihnen. Faire Fixpreise ab 60€, keine Anfahrtskosten.",
+      "Schlüsseldienst in 1020 Wien — Leopoldstadt. Ausgesperrt im 2. Bezirk? Unser Aufsperrdienst ist in 15–20 Minuten bei Ihnen. Faire Fixpreise ab 79€, keine Anfahrtskosten.",
     longDescription:
       "Im 2. Bezirk Leopoldstadt bieten wir professionellen Schlüsseldienst und Aufsperrdienst. Ob beim Prater, am Praterstern oder in der Taborstraße — wir sind schnell vor Ort. Türöffnung, Schlosswechsel, Zylindertausch und Einbruchschutz, 24 Stunden am Tag, 7 Tage die Woche.",
     landmarks: ["Prater", "Praterstern", "Augarten", "Taborstraße", "Donaukanal"],
@@ -101,7 +101,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1040 Wien — Wieden. Ausgesperrt? Schlüssel verloren? Unser Aufsperrdienst hilft schnell und günstig. Fixpreise ab 60€, keine Anfahrtskosten, 24/7 Notdienst.",
+      "Schlüsseldienst in 1040 Wien — Wieden. Ausgesperrt? Schlüssel verloren? Unser Aufsperrdienst hilft schnell und günstig. Fixpreise ab 79€, keine Anfahrtskosten, 24/7 Notdienst.",
     longDescription:
       "Im 4. Bezirk Wieden, direkt neben unserem Hauptstandort in Mariahilf, sind wir besonders schnell bei Ihnen. Ob am Karlsplatz, in der Wiedner Hauptstraße oder beim Naschmarkt — professionelle Türöffnung, Schlosswechsel und Sicherheitsberatung, rund um die Uhr zu fairen Fixpreisen.",
     landmarks: ["Karlsplatz", "Naschmarkt", "Wiedner Hauptstraße", "TU Wien", "Freihausviertel"],
@@ -131,7 +131,7 @@ export const EINSATZGEBIETE: {
     description:
       "Ihr Schlüsseldienst-Hauptstandort in 1060 Wien — Mariahilf, Schmalzhofgasse 10/2/27. Als Profi-Aufsperrdienst stehen wir Ihnen rund um die Uhr, 365 Tage im Jahr zur Verfügung. Keinerlei Anfahrtskosten.",
     longDescription:
-      "Der 6. Bezirk Mariahilf ist unser Hauptstandort. Von der Schmalzhofgasse 10/2/27 aus versorgen wir ganz Wien mit professionellem Schlüsseldienst und Aufsperrdienst. Ob in der Mariahilfer Straße, am Naschmarkt oder in der Gumpendorfer Straße — wir sind innerhalb weniger Minuten bei Ihnen. Türöffnung, Schlosswechsel, Zylindertausch, Sicherheitsberatung und Einbruchschutz: Alles aus einer Hand, 24/7, zu fairen Fixpreisen ab 60€.",
+      "Der 6. Bezirk Mariahilf ist unser Hauptstandort. Von der Schmalzhofgasse 10/2/27 aus versorgen wir ganz Wien mit professionellem Schlüsseldienst und Aufsperrdienst. Ob in der Mariahilfer Straße, am Naschmarkt oder in der Gumpendorfer Straße — wir sind innerhalb weniger Minuten bei Ihnen. Türöffnung, Schlosswechsel, Zylindertausch, Sicherheitsberatung und Einbruchschutz: Alles aus einer Hand, 24/7, zu fairen Fixpreisen ab 79€.",
     landmarks: ["Mariahilfer Straße", "Naschmarkt", "Gumpendorfer Straße", "Theater an der Wien", "Haus des Meeres"],
     anfahrt: "Unser Hauptstandort — wir sind in wenigen Minuten bei Ihnen im Bezirk!",
   },
@@ -157,7 +157,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1080 Wien — Josefstadt. Ausgesperrt im 8. Bezirk? Wir kommen in 15 Minuten. Faire Fixpreise ab 60€, keine Anfahrtskosten, 24/7 Notdienst.",
+      "Schlüsseldienst in 1080 Wien — Josefstadt. Ausgesperrt im 8. Bezirk? Wir kommen in 15 Minuten. Faire Fixpreise ab 79€, keine Anfahrtskosten, 24/7 Notdienst.",
     longDescription:
       "Im 8. Bezirk Josefstadt, Wiens kleinstem Bezirk, bieten wir schnellen und zuverlässigen Schlüsseldienst. Ob in der Josefstädter Straße, beim Theater in der Josefstadt oder am Schönbornpark — wir sind rasch vor Ort. Türöffnung, Schlosswechsel und Sicherheitstechnik, rund um die Uhr.",
     landmarks: ["Josefstädter Straße", "Theater in der Josefstadt", "Schönbornpark", "Rathaus", "Auerspergstraße"],
@@ -199,7 +199,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Aufsperrdienst in 1110 Wien — Simmering. Tür zugefallen oder Schloss defekt? Wir kommen in 15–20 Minuten. Faire Fixpreise ab 60€, keine Anfahrtskosten, 24/7 erreichbar.",
+      "Aufsperrdienst in 1110 Wien — Simmering. Tür zugefallen oder Schloss defekt? Wir kommen in 15–20 Minuten. Faire Fixpreise ab 79€, keine Anfahrtskosten, 24/7 erreichbar.",
     longDescription:
       "Im 11. Bezirk Simmering sind wir Ihr professioneller Schlüsseldienst. Ob am Zentralfriedhof, in der Simmeringer Hauptstraße oder beim Gasometer — wir sind in 15–20 Minuten bei Ihnen. Türöffnung, Schlosswechsel, Zylindertausch und Einbruchschutz, rund um die Uhr zum Fixpreis.",
     landmarks: ["Zentralfriedhof", "Gasometer", "Simmeringer Hauptstraße", "Schloss Neugebäude", "Enkplatz"],
@@ -213,7 +213,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1120 Wien — Meidling. Ausgesperrt? Schlüssel verloren? Unser Aufsperrdienst ist in 15 Minuten bei Ihnen. Fixpreise ab 60€, keine Anfahrtskosten, 24/7.",
+      "Schlüsseldienst in 1120 Wien — Meidling. Ausgesperrt? Schlüssel verloren? Unser Aufsperrdienst ist in 15 Minuten bei Ihnen. Fixpreise ab 79€, keine Anfahrtskosten, 24/7.",
     longDescription:
       "Im 12. Bezirk Meidling bieten wir schnellen und günstigen Schlüsseldienst. Ob in der Meidlinger Hauptstraße, am Meidlinger Markt oder beim Bahnhof Meidling — wir sind rasch bei Ihnen. Professionelle Türöffnung, Schlosswechsel und Sicherheitstechnik zu fairen Fixpreisen.",
     landmarks: ["Bahnhof Meidling", "Meidlinger Hauptstraße", "Schönbrunn (Nähe)", "Theresienbad", "Am Schöpfwerk"],
@@ -241,7 +241,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1140 Wien — Penzing. Tür zugefallen oder Schloss klemmt? Wir kommen in 15–20 Minuten. Faire Fixpreise ab 60€, 24/7 Notdienst, keine Anfahrtskosten.",
+      "Schlüsseldienst in 1140 Wien — Penzing. Tür zugefallen oder Schloss klemmt? Wir kommen in 15–20 Minuten. Faire Fixpreise ab 79€, 24/7 Notdienst, keine Anfahrtskosten.",
     longDescription:
       "Im 14. Bezirk Penzing bieten wir professionellen Schlüsseldienst. Ob in der Hütteldorfer Straße, beim Technischen Museum oder am Baumgartner Casino — wir sind schnell bei Ihnen. Türöffnung, Schlosswechsel und Sicherheitstechnik, rund um die Uhr.",
     landmarks: ["Technisches Museum", "Hütteldorfer Straße", "Baumgarten", "Breitensee", "Hadikgasse"],
@@ -269,7 +269,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1160 Wien — Ottakring. Schlüssel verloren oder Tür zugefallen? Wir kommen in 15 Minuten. Faire Fixpreise ab 60€, keine Anfahrtskosten, 24/7.",
+      "Schlüsseldienst in 1160 Wien — Ottakring. Schlüssel verloren oder Tür zugefallen? Wir kommen in 15 Minuten. Faire Fixpreise ab 79€, keine Anfahrtskosten, 24/7.",
     longDescription:
       "Im 16. Bezirk Ottakring bieten wir zuverlässigen Schlüsseldienst und Aufsperrdienst. Ob in der Thaliastraße, am Brunnenmarkt oder beim Wilhelminenberg — wir sind rasch bei Ihnen. Türöffnung, Schlosswechsel, Zylindertausch und Einbruchschutz, rund um die Uhr.",
     landmarks: ["Brunnenmarkt", "Thaliastraße", "Wilhelminenberg", "Yppenplatz", "Ottakringer Brauerei"],
@@ -297,7 +297,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1180 Wien — Währing. Tür zugefallen oder Schloss defekt? Wir sind in 15–20 Minuten vor Ort. Faire Fixpreise ab 60€, keine Anfahrtskosten.",
+      "Schlüsseldienst in 1180 Wien — Währing. Tür zugefallen oder Schloss defekt? Wir sind in 15–20 Minuten vor Ort. Faire Fixpreise ab 79€, keine Anfahrtskosten.",
     longDescription:
       "Im 18. Bezirk Währing bieten wir schnellen Schlüsseldienst und Aufsperrdienst. Ob in der Währinger Straße, beim Türkenschanzpark oder am Kutschkermarkt — wir kommen zuverlässig und professionell. Türöffnung, Schlosswechsel und Einbruchschutz, 24/7.",
     landmarks: ["Türkenschanzpark", "Kutschkermarkt", "Währinger Straße", "Gersthof", "Cottageviertel"],
@@ -325,9 +325,9 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Schlüsseldienst in 1200 Wien — Brigittenau. Schlüssel verloren, Schloss defekt oder ausgesperrt? Fixpreis für zugefallene Türen ab 60€. 24/7 erreichbar, keine Anfahrtskosten.",
+      "Schlüsseldienst in 1200 Wien — Brigittenau. Schlüssel verloren, Schloss defekt oder ausgesperrt? Fixpreis für zugefallene Türen ab 79€. 24/7 erreichbar, keine Anfahrtskosten.",
     longDescription:
-      "Im 20. Bezirk Brigittenau bieten wir schnellen Schlüsseldienst. Ob am Hannovermarkt, in der Wallensteinstraße oder beim Millennium Tower — wir sind rasch bei Ihnen. Professionelle Türöffnung, Schlosswechsel und Sicherheitstechnik zum Fixpreis ab 60€.",
+      "Im 20. Bezirk Brigittenau bieten wir schnellen Schlüsseldienst. Ob am Hannovermarkt, in der Wallensteinstraße oder beim Millennium Tower — wir sind rasch bei Ihnen. Professionelle Türöffnung, Schlosswechsel und Sicherheitstechnik zum Fixpreis ab 79€.",
     landmarks: ["Millennium Tower", "Hannovermarkt", "Wallensteinstraße", "Brigittaplatz", "Donauinsel (Nähe)"],
     anfahrt: "Von unserem Standort in der Klosterneuburger Straße 7 sind wir sofort im gesamten 20. Bezirk.",
   },
@@ -367,7 +367,7 @@ export const EINSATZGEBIETE: {
     address: "",
     hauptstandort: false,
     description:
-      "Aufsperrdienst in 1230 Wien — Liesing. Tür zugefallen oder Schloss defekt? Wir kommen in 20 Minuten. Faire Fixpreise ab 60€, keine Anfahrtskosten, 24/7 erreichbar.",
+      "Aufsperrdienst in 1230 Wien — Liesing. Tür zugefallen oder Schloss defekt? Wir kommen in 20 Minuten. Faire Fixpreise ab 79€, keine Anfahrtskosten, 24/7 erreichbar.",
     longDescription:
       "Im 23. Bezirk Liesing bieten wir zuverlässigen Schlüsseldienst und Aufsperrdienst. Ob in Atzgersdorf, Mauer, Rodaun oder in der Breitenfurter Straße — wir sind professionell und schnell bei Ihnen. Türöffnung, Schlosswechsel, Zylindertausch und Sicherheitsberatung, 24/7 zum Fixpreis.",
     landmarks: ["Riverside", "Atzgersdorf", "Mauer", "Rodaun", "Breitenfurter Straße"],
@@ -480,7 +480,7 @@ export const FAQ_ITEMS = [
   {
     question: "Was kostet eine Türöffnung?",
     answer:
-      "Bei einer zugefallenen Tür in Wien beginnen unsere Preise ab 60€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vor Beginn der Arbeit am Telefon vereinbart. Kein Auftrag ohne Ihre Zustimmung.",
+      "Bei einer zugefallenen Tür in Wien beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vor Beginn der Arbeit am Telefon vereinbart. Kein Auftrag ohne Ihre Zustimmung.",
   },
   {
     question: "Wie schnell sind Sie vor Ort?",
@@ -533,7 +533,7 @@ export const REVIEWS = [
     location: "Klosterneuburg",
     date: "vor 1 Monat",
     rating: 5,
-    text: "Schlüssel abgebrochen mitten im Schloss. Ausgesperrt Wien hat das super sauber gelöst, ohne das Schloss zu beschädigen. Sehr professionell und freundlich.",
+    text: "Schlüssel abgebrochen mitten im Schloss. Ausgesperrt Vienna hat das super sauber gelöst, ohne das Schloss zu beschädigen. Sehr professionell und freundlich.",
   },
   {
     name: "Thomas B.",

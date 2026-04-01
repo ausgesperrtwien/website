@@ -56,14 +56,14 @@ export default function Header() {
             <Link href="/" className="group flex items-center gap-2.5 shrink-0 transition-opacity duration-200 hover:opacity-80">
               <Image
                 src="/logo.png"
-                alt="Ausgesperrt Wien – Schlüsseldienst"
+                alt="Ausgesperrt Vienna – Schlüsseldienst"
                 width={160}
                 height={48}
                 className="h-12 w-auto object-contain"
                 priority
               />
               <span className="font-heading text-base font-bold text-text-primary leading-tight hidden sm:block">
-                Ausgesperrt Wien
+                Ausgesperrt Vienna
               </span>
             </Link>
 

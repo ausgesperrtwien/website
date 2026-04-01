@@ -9,7 +9,7 @@ import SectionReveal from "@/components/SectionReveal";
 export const metadata: Metadata = {
   title: "24h Aufsperrdienst",
   description:
-    "Ausgesperrt? Schlüssel verloren? Tür zugefallen? Ausgesperrt Wien — Ihr 24h Aufsperrdienst in Wien und Klosterneuburg. In 15–20 Minuten vor Ort. ☎ +43 676 911 14 12",
+    "Ausgesperrt? Schlüssel verloren? Tür zugefallen? Ausgesperrt Vienna — Ihr 24h Aufsperrdienst in Wien und Klosterneuburg. In 15–20 Minuten vor Ort. ☎ +43 676 911 14 12",
 };
 
 const iconMap = {

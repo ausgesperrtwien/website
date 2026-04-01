@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${area.district} Wien ${area.name}`;
 
   const title = `Schlüsseldienst ${locationLabel} — 24h Aufsperrdienst${area.hauptstandort ? " | Hauptstandort" : ""}`;
-  const description = `Schlüsseldienst in ${locationLabel} ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 60€ ✓ Keine Anfahrtskosten ✓ 24/7 Notdienst ✓ Türöffnung, Schlosswechsel, Zylindertausch. Jetzt anrufen: ${COMPANY.phone}`;
+  const description = `Schlüsseldienst in ${locationLabel} ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 79€ ✓ Keine Anfahrtskosten ✓ 24/7 Notdienst ✓ Türöffnung, Schlosswechsel, Zylindertausch. Jetzt anrufen: ${COMPANY.phone}`;
 
   const keywords = isKlosterneuburg
     ? [
@@ -228,7 +228,7 @@ export default async function BezirkPage({ params }: Props) {
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
               {[
                 { icon: Clock, text: "In 15–20 Min vor Ort" },
-                { icon: Euro, text: "Faire Fixpreise ab 60€" },
+                { icon: Euro, text: "Faire Fixpreise ab 79€" },
                 { icon: MapPin, text: "Keine Anfahrtskosten" },
                 { icon: Phone, text: "24/7 Notdienst" },
               ].map((item) => (
@@ -268,7 +268,7 @@ export default async function BezirkPage({ params }: Props) {
                       "Sicherheitszylinder & Beschläge",
                       "Hilfe nach Einbruch",
                       "24/7 Notdienst",
-                      "Faire Fixpreise ab 60€",
+                      "Faire Fixpreise ab 79€",
                       "Keine Anfahrtskosten",
                       "In 15–20 Minuten vor Ort",
                     ].map((point) => (
@@ -329,7 +329,7 @@ export default async function BezirkPage({ params }: Props) {
                     <ul className="mt-6 space-y-3">
                       {[
                         { icon: Clock, text: "15–20 Min Anfahrt" },
-                        { icon: Euro, text: "Fixpreise ab 60€" },
+                        { icon: Euro, text: "Fixpreise ab 79€" },
                         { icon: Shield, text: "Keine Anfahrtskosten" },
                         { icon: Star, text: "5-Sterne Service" },
                       ].map((item) => (
@@ -429,7 +429,7 @@ export default async function BezirkPage({ params }: Props) {
               {[
                 {
                   q: `Was kostet der Schlüsseldienst in ${isKlosterneuburg ? "Klosterneuburg" : `${area.district} Wien`}?`,
-                  a: `Bei einer zugefallenen Tür in ${isKlosterneuburg ? "Klosterneuburg" : `${area.name}`} beginnen unsere Preise ab 60€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart — kein Auftrag ohne Ihre Zustimmung. Keine versteckten Kosten, keine Anfahrtskosten.`,
+                  a: `Bei einer zugefallenen Tür in ${isKlosterneuburg ? "Klosterneuburg" : `${area.name}`} beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart — kein Auftrag ohne Ihre Zustimmung. Keine versteckten Kosten, keine Anfahrtskosten.`,
                 },
                 {
                   q: `Wie schnell sind Sie in ${isKlosterneuburg ? "Klosterneuburg" : area.name} vor Ort?`,

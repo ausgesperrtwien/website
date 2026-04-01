@@ -15,7 +15,7 @@ import SectionReveal from "@/components/SectionReveal";
 
 export const metadata: Metadata = {
   title:
-    "Nach einem Einbruch — Was tun? Schritt-für-Schritt-Anleitung | Ausgesperrt Wien",
+    "Nach einem Einbruch — Was tun? Schritt-für-Schritt-Anleitung | Ausgesperrt Vienna",
   description:
     "Einbruch in Wien? Erfahren Sie, was Sie sofort tun sollten: Polizei, Spurensicherung, Versicherung, Schloss tauschen. Schritt-für-Schritt vom Experten.",
   openGraph: {
@@ -238,7 +238,7 @@ export default function BlogPost() {
                     Einbruch? Wir sichern Ihre Wohnung sofort.
                   </h3>
                   <p className="mx-auto mt-2 max-w-md text-sm text-white/80">
-                    Ausgesperrt Wien ist rund um die Uhr erreichbar. Wir
+                    Ausgesperrt Vienna ist rund um die Uhr erreichbar. Wir
                     tauschen Ihr Schloss noch am selben Tag, sichern Türen und
                     Fenster und beraten Sie zu Einbruchschutz — in ganz Wien.
                   </p>

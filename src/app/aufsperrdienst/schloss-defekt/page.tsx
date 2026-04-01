@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Schloss lässt sich nicht drehen Wien",
   ],
   openGraph: {
-    title: "Schloss defekt Wien — 24h Schlossreparatur | Ausgesperrt Wien",
+    title: "Schloss defekt Wien — 24h Schlossreparatur | Ausgesperrt Vienna",
     description:
       "Schloss klemmt oder defekt? In 15–20 Min sind wir bei Ihnen. Reparatur oder Tausch vor Ort. ☎ Jetzt anrufen!",
     locale: "de_AT",
@@ -238,7 +238,7 @@ export default function SchlossDefektPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionReveal>
             <h2 className="text-center font-heading text-3xl font-bold text-text-primary sm:text-4xl">
-              Warum Ausgesperrt Wien?
+              Warum Ausgesperrt Vienna?
             </h2>
           </SectionReveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

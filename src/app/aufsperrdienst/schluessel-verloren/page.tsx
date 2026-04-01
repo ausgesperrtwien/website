@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Ausgesperrt Schlüssel verloren Wien",
   ],
   openGraph: {
-    title: "Schlüssel verloren Wien — 24h Aufsperrdienst | Ausgesperrt Wien",
+    title: "Schlüssel verloren Wien — 24h Aufsperrdienst | Ausgesperrt Vienna",
     description:
       "Schlüssel verloren? In 15–20 Min sind wir bei Ihnen. Professionelle Türöffnung & Zylindertausch. ☎ Jetzt anrufen!",
     locale: "de_AT",
@@ -239,7 +239,7 @@ export default function SchluesselVerlorenPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionReveal>
             <h2 className="text-center font-heading text-3xl font-bold text-text-primary sm:text-4xl">
-              Warum Ausgesperrt Wien?
+              Warum Ausgesperrt Vienna?
             </h2>
           </SectionReveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

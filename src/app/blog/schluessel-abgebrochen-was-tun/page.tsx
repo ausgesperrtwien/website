@@ -7,7 +7,7 @@ import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
 
 export const metadata: Metadata = {
-  title: "Schlüssel abgebrochen in der Tür — Was tun? | Ausgesperrt Wien",
+  title: "Schlüssel abgebrochen in der Tür — Was tun? | Ausgesperrt Vienna",
   description:
     "Der Schlüssel ist im Schloss abgebrochen? Erfahren Sie, was Sie sofort tun sollten, welche Fehler Sie vermeiden müssen und wann Sie einen Schlüsseldienst in Wien rufen sollten.",
   openGraph: {
@@ -226,7 +226,7 @@ export default function BlogPost() {
                     Schlüssel abgebrochen? Wir helfen sofort.
                   </h3>
                   <p className="mx-auto mt-2 max-w-md text-sm text-white/80">
-                    Ausgesperrt Wien ist rund um die Uhr für Sie da — mit Festpreis,
+                    Ausgesperrt Vienna ist rund um die Uhr für Sie da — mit Festpreis,
                     schadensfreier Öffnung und in ganz Wien in 15–30 Minuten vor Ort.
                   </p>
                   <div className="mt-6 flex justify-center">
@@ -246,10 +246,10 @@ export default function BlogPost() {
                 </p>
                 <ul className="my-4 space-y-2">
                   <li>
-                    <strong>Tagsüber (06:00–22:00):</strong> ab 49&nbsp;€
+                    <strong>Tagsüber (06:00–22:00):</strong> ab 79&nbsp;€
                   </li>
                   <li>
-                    <strong>Nachts, Sonn- und Feiertage:</strong> ab 98&nbsp;€
+                    <strong>Nachts, Sonn- und Feiertage:</strong> ab 120&nbsp;€
                   </li>
                 </ul>
                 <p>

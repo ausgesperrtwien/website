@@ -9,7 +9,7 @@ import SectionReveal from "@/components/SectionReveal";
 export const metadata: Metadata = {
   title: "Einsatzgebiete — Schlüsseldienst in allen Wiener Bezirken",
   description:
-    "Ausgesperrt Wien Schlüsseldienst — in allen 23 Wiener Bezirken und Klosterneuburg im Einsatz. Hauptstandort 1060 Mariahilf. In 15–20 Minuten vor Ort. Faire Fixpreise ab 60€, keine Anfahrtskosten.",
+    "Ausgesperrt Vienna Schlüsseldienst — in allen 23 Wiener Bezirken und Klosterneuburg im Einsatz. Hauptstandort 1060 Mariahilf. In 15–20 Minuten vor Ort. Faire Fixpreise ab 79€, keine Anfahrtskosten.",
   keywords: [
     "Schlüsseldienst Wien Bezirke",
     "Aufsperrdienst Wien alle Bezirke",
@@ -66,7 +66,7 @@ export default function EinsatzgebietePage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/einsatzgebiete.jpg"
-              alt="Einsatzgebiete Ausgesperrt Wien"
+              alt="Einsatzgebiete Ausgesperrt Vienna"
               fill
               className="object-cover opacity-20"
               sizes="100vw"

@@ -9,7 +9,7 @@ import Contact from "@/components/sections/Contact";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Ausgesperrt Wien Schlüsseldienst Wien. ☎ +43 676 911 14 12. Klosterneuburger Straße 7, 1200 Wien. 24/7 erreichbar.",
+    "Kontaktieren Sie Ausgesperrt Vienna Schlüsseldienst Wien. ☎ +43 676 911 14 12. Klosterneuburger Straße 7, 1200 Wien. 24/7 erreichbar.",
 };
 
 export default function KontaktPage() {
@@ -20,7 +20,7 @@ export default function KontaktPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/kontakt.jpg"
-            alt="Kontakt Ausgesperrt Wien"
+            alt="Kontakt Ausgesperrt Vienna"
             fill
             className="object-cover opacity-20"
             sizes="100vw"
@@ -123,7 +123,7 @@ export default function KontaktPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ausgesperrt Wien Standort — Schmalzhofgasse 10/2/27, 1060 Wien"
+                title="Ausgesperrt Vienna Standort — Schmalzhofgasse 10/2/27, 1060 Wien"
               />
             </div>
           </SectionReveal>

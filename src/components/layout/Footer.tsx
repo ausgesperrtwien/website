@@ -12,7 +12,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl">🔑</span>
               <span className="font-heading text-xl font-bold text-white">
-                Ausgesperrt Wien
+                Ausgesperrt Vienna
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
@@ -127,7 +127,15 @@ export default function Footer() {
           <p className="text-sm text-gray-500">
             © 2026 {COMPANY.legalName}. Alle Rechte vorbehalten.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <a
+              href="https://htd.solutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-yellow-300 transition-colors hover:text-gray-300"
+            >
+              Website von HTD Solutions
+            </a>
             <Link
               href="/impressum"
               className="text-sm text-gray-500 transition-colors hover:text-gray-300"

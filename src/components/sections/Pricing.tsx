@@ -25,7 +25,7 @@ export default function Pricing() {
             <div className="mt-4 flex items-baseline justify-center gap-1">
               <span className="text-lg text-text-secondary">ab</span>
               <span className="font-heading text-6xl font-bold text-primary">
-                <CounterAnimation end={60} prefix="" suffix="" />
+                <CounterAnimation end={79} prefix="" suffix="" />
               </span>
               <span className="text-2xl font-semibold text-primary">€</span>
             </div>
