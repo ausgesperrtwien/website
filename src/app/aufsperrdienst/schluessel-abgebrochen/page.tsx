@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://ausgesperrt.wien/aufsperrdienst/schluessel-abgebrochen",
+    canonical: "https://ausgesperrtwien.at/aufsperrdienst/schluessel-abgebrochen",
   },
 };
 

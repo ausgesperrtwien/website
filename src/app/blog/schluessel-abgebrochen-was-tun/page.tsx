@@ -28,7 +28,7 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: COMPANY.name,
-    url: "https://www.ausgesperrt.wien",
+    url: "https://ausgesperrtwien.at",
   },
   publisher: {
     "@type": "Organization",

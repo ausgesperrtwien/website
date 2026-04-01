@@ -7,7 +7,7 @@ export const COMPANY = {
   country: "Österreich",
   phone: "+43 660 172 63 00",
   phoneRaw: "+436601726300",
-  email: "office@ausgesperrt.wien",
+  email: "office@ausgesperrtwien.at",
   hours: "24/7 — Montag bis Sonntag, 00:00–24:00 Uhr",
   hoursShort: "Mo–So, 00:00–24:00",
   languages: ["Deutsch", "Englisch", "Russisch"],

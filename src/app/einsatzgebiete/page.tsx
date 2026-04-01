@@ -32,7 +32,7 @@ const jsonLd = {
   name: COMPANY.name,
   telephone: COMPANY.phone,
   email: COMPANY.email,
-  url: "https://ausgesperrt.wien/einsatzgebiete",
+  url: "https://ausgesperrtwien.at/einsatzgebiete",
   address: {
     "@type": "PostalAddress",
     streetAddress: COMPANY.address,

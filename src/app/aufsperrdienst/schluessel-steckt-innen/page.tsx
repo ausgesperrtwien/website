@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://ausgesperrt.wien/aufsperrdienst/schluessel-steckt-innen",
+    canonical: "https://ausgesperrtwien.at/aufsperrdienst/schluessel-steckt-innen",
   },
 };
 

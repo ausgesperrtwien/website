@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://ausgesperrt.wien/sitemap.xml",
+    sitemap: "https://ausgesperrtwien.at/sitemap.xml",
   };
 }

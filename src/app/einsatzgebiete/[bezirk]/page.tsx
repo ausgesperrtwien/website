@@ -102,8 +102,8 @@ export default async function BezirkPage({ params }: Props) {
     description: area.description,
     telephone: COMPANY.phone,
     email: COMPANY.email,
-    url: `https://ausgesperrt.wien/einsatzgebiete/${area.slug}`,
-    image: "https://ausgesperrt.wien/og-image.jpg",
+    url: `https://ausgesperrtwien.at/einsatzgebiete/${area.slug}`,
+    image: "https://ausgesperrtwien.at/og-image.jpg",
     address: {
       "@type": "PostalAddress",
       streetAddress: area.address || COMPANY.address,

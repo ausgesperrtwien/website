@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://ausgesperrt.wien/aufsperrdienst/tuer-zugefallen",
+    canonical: "https://ausgesperrtwien.at/aufsperrdienst/tuer-zugefallen",
   },
 };
 

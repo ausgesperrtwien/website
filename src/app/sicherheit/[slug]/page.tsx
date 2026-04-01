@@ -454,14 +454,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: data.metaDescription,
     keywords: data.keywords,
     alternates: {
-      canonical: `https://ausgesperrt.wien/sicherheit/${slug}`,
+      canonical: `https://ausgesperrtwien.at/sicherheit/${slug}`,
     },
     openGraph: {
       title: data.metaTitle,
       description: data.metaDescription,
       locale: "de_AT",
       type: "website",
-      url: `https://ausgesperrt.wien/sicherheit/${slug}`,
+      url: `https://ausgesperrtwien.at/sicherheit/${slug}`,
     },
   };
 }
@@ -537,19 +537,19 @@ export default async function SecurityServicePage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://ausgesperrt.wien",
+        item: "https://ausgesperrtwien.at",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Sicherheit",
-        item: "https://ausgesperrt.wien/sicherheit",
+        item: "https://ausgesperrtwien.at/sicherheit",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: service.text,
-        item: `https://ausgesperrt.wien/sicherheit/${slug}`,
+        item: `https://ausgesperrtwien.at/sicherheit/${slug}`,
       },
     ],
   };

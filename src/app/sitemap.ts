@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SERVICES, EINSATZGEBIETE, SECURITY_SERVICES } from "@/lib/constants";
 
-const BASE_URL = "https://ausgesperrt.wien";
+const BASE_URL = "https://ausgesperrtwien.at";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

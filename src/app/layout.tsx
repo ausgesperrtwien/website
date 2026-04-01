@@ -21,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ausgesperrt.wien"),
+  metadataBase: new URL("https://ausgesperrtwien.at"),
   alternates: {
     canonical: "/",
   },

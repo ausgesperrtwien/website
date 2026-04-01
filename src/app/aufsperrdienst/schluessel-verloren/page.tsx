@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://ausgesperrt.wien/aufsperrdienst/schluessel-verloren",
+    canonical: "https://ausgesperrtwien.at/aufsperrdienst/schluessel-verloren",
   },
 };
 
