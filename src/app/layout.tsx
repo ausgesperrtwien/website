@@ -21,6 +21,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ausgesperrt.wien"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Ausgesperrt Wien — Schlüsseldienst Wien | 24h Aufsperrdienst",
     template: "%s | Ausgesperrt Wien Schlüsseldienst Wien",

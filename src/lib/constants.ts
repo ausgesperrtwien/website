@@ -26,6 +26,7 @@ export const NAV_LINKS = [
   { label: "Aufsperrdienst", href: "/aufsperrdienst" },
   { label: "Sicherheit", href: "/sicherheit" },
   { label: "Einsatzgebiete", href: "/einsatzgebiete" },
+  { label: "Blog", href: "/blog" },
   { label: "Kontakt", href: "/kontakt" },
 ] as const;
 
