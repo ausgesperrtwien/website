@@ -11,6 +11,10 @@ out/
 build/
 dist/
 
+.playwright*/*
+
+*.md
+
 # Environment variables
 .env
 .env.local
