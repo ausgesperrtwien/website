@@ -14,6 +14,7 @@ import {
 import { EINSATZGEBIETE, COMPANY, SERVICES } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 /* ───────── helper ───────── */
 function getArea(slug: string) {
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${area.district} Wien ${area.name}`;
 
   const title = `Schlüsseldienst ${locationLabel} — 24h Aufsperrdienst${area.hauptstandort ? " | Hauptstandort" : ""}`;
-  const description = `Schlüsseldienst in ${locationLabel} ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 79€ ✓ Keine Anfahrtskosten ✓ 24/7 Notdienst ✓ Türöffnung, Schlosswechsel, Zylindertausch. Jetzt anrufen: ${COMPANY.phone}`;
+  const description = `Schlüsseldienst in ${locationLabel} in Ihrer Nähe ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 79€ ✓ Keine Anfahrtskosten ✓ 24/7 Notdienst ✓ Türöffnung, Schlosswechsel, Zylindertausch. Jetzt anrufen: ${COMPANY.phone}`;
 
   const keywords = isKlosterneuburg
     ? [
@@ -55,6 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         `Aufsperrdienst ${area.district} Wien`,
         `Schlüsseldienst ${area.name}`,
         `Aufsperrdienst ${area.name} Wien`,
+        `Schlüsseldienst in meiner Nähe ${area.name}`,
+        `Aufsperrdienst in der Nähe ${area.district} Wien`,
         `Schlüsselnotdienst ${area.district}`,
         `Türöffnung ${area.district} Wien`,
         `Schloss wechseln ${area.district} Wien`,
@@ -113,14 +116,15 @@ export default async function BezirkPage({ params }: Props) {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 48.2082,
-      longitude: 16.3738,
+      latitude: area.latitude,
+      longitude: area.longitude,
     },
     areaServed: {
       "@type": "Place",
       name: isKlosterneuburg
         ? "Klosterneuburg"
         : `${area.name}, Wien`,
+      postalCode: area.plz,
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -154,38 +158,13 @@ export default async function BezirkPage({ params }: Props) {
       />
 
       <div className="pt-[72px]">
-        {/* Breadcrumb */}
-        <nav
-          aria-label="Breadcrumb"
-          className="bg-bg-secondary border-b border-border"
-        >
-          <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-            <ol className="flex flex-wrap items-center gap-1.5 text-sm text-text-muted">
-              <li>
-                <Link href="/" className="hover:text-primary transition-colors">
-                  Startseite
-                </Link>
-              </li>
-              <li>
-                <ChevronRight className="h-3.5 w-3.5" />
-              </li>
-              <li>
-                <Link
-                  href="/einsatzgebiete"
-                  className="hover:text-primary transition-colors"
-                >
-                  Einsatzgebiete
-                </Link>
-              </li>
-              <li>
-                <ChevronRight className="h-3.5 w-3.5" />
-              </li>
-              <li className="font-medium text-text-primary">
-                {locationShort}
-              </li>
-            </ol>
-          </div>
-        </nav>
+        <Breadcrumbs
+          items={[
+            { label: "Startseite", href: "/" },
+            { label: "Einsatzgebiete", href: "/einsatzgebiete" },
+            { label: locationShort },
+          ]}
+        />
 
         {/* Hero */}
         <section className="bg-primary py-16 lg:py-24">
@@ -429,7 +408,7 @@ export default async function BezirkPage({ params }: Props) {
               {[
                 {
                   q: `Was kostet der Schlüsseldienst in ${isKlosterneuburg ? "Klosterneuburg" : `${area.district} Wien`}?`,
-                  a: `Bei einer zugefallenen Tür in ${isKlosterneuburg ? "Klosterneuburg" : `${area.name}`} beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart — kein Auftrag ohne Ihre Zustimmung. Keine versteckten Kosten, keine Anfahrtskosten.`,
+                  a: `Bei einer zugefallenen Tür in ${isKlosterneuburg ? "Klosterneuburg" : `${area.name}`} beginnen unsere Preise ab 79€ (Mo–Fr, 8–17 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart — kein Auftrag ohne Ihre Zustimmung. Keine versteckten Kosten, keine Anfahrtskosten.`,
                 },
                 {
                   q: `Wie schnell sind Sie in ${isKlosterneuburg ? "Klosterneuburg" : area.name} vor Ort?`,

@@ -7,9 +7,76 @@ import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
 
 export const metadata: Metadata = {
-  title: "24h Aufsperrdienst",
+  title: "Aufsperrdienst Wien — 24h Notdienst | Ab 79€ Fixpreis",
   description:
-    "Ausgesperrt? Schlüssel verloren? Tür zugefallen? Ausgesperrt Vienna — Ihr 24h Aufsperrdienst in Wien und Klosterneuburg. In 15–20 Minuten vor Ort. ☎ +43 676 911 14 12",
+    "Aufsperrdienst Wien ✓ 24h Notdienst ✓ In 15–20 Min vor Ort ✓ Faire Fixpreise ab 79€ ✓ Keine Anfahrtskosten. Ausgesperrt? Schlüssel verloren? Tür zugefallen? Jetzt anrufen: " + COMPANY.phone,
+  keywords: [
+    "Aufsperrdienst Wien",
+    "Aufsperrdienst",
+    "24h Aufsperrdienst Wien",
+    "Aufsperrdienst Notdienst Wien",
+    "Schlüsseldienst Notdienst Wien",
+    "Türöffnung Wien Notfall",
+    "ausgesperrt Wien",
+  ],
+  alternates: {
+    canonical: "/aufsperrdienst",
+  },
+  openGraph: {
+    title: "Aufsperrdienst Wien — 24h Notdienst | Ab 79€ Fixpreis",
+    description:
+      "Aufsperrdienst Wien — 24h erreichbar, in 15–20 Min vor Ort. Faire Fixpreise ab 79€, keine Anfahrtskosten.",
+    locale: "de_AT",
+    type: "website",
+  },
+};
+
+const aufsperrdienstSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "24h Aufsperrdienst Wien",
+  description:
+    "Professioneller Aufsperrdienst in Wien — 24/7 Notdienst, faire Fixpreise ab 79€, in 15–20 Minuten vor Ort.",
+  provider: {
+    "@type": "LocalBusiness",
+    name: COMPANY.name,
+    telephone: COMPANY.phone,
+    email: COMPANY.email,
+    url: "https://ausgesperrtwien.at",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: COMPANY.address,
+      postalCode: COMPANY.zip,
+      addressLocality: COMPANY.city,
+      addressCountry: "AT",
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+    areaServed: [
+      { "@type": "City", name: "Wien" },
+      { "@type": "City", name: "Klosterneuburg" },
+    ],
+  },
+  serviceType: "Locksmith",
+  areaServed: { "@type": "City", name: "Wien" },
+  offers: {
+    "@type": "Offer",
+    price: "79",
+    priceCurrency: "EUR",
+    description: "ab 79€ (Mo–Fr, 8–17 Uhr, zugefallene Tür)",
+  },
 };
 
 const iconMap = {
@@ -22,6 +89,10 @@ const iconMap = {
 export default function AufsperrdienstPage() {
   return (
     <div className="pt-[72px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aufsperrdienstSchema) }}
+      />
       {/* Emergency Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
         <div className="absolute inset-0 z-0">
@@ -42,7 +113,7 @@ export default function AufsperrdienstPage() {
               <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
                 Ausgesperrt?
                 <br />
-                <span className="text-gold-light">Wir helfen sofort.</span>
+                <span className="text-gold-light">Ihr Aufsperrdienst Wien hilft sofort.</span>
               </h1>
               <p className="mt-4 max-w-lg text-lg text-white/80">
                 Als professioneller 24 Stunden Notdienst stehen wir Ihnen in

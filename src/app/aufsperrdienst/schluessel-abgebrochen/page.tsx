@@ -12,6 +12,8 @@ import {
 import { COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import BezirkeLinkGrid from "@/components/BezirkeLinkGrid";
 
 export const metadata: Metadata = {
   title: "Schlüssel abgebrochen Wien — 24h Notdienst Schlüsseldienst",
@@ -115,17 +117,13 @@ export default function SchluesselAbgebrochenPage() {
       />
 
       {/* Breadcrumb */}
-      <div className="bg-bg-secondary">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1 text-sm text-text-muted">
-            <Link href="/" className="hover:text-primary">Home</Link>
-            <ChevronRight className="h-3 w-3" />
-            <Link href="/aufsperrdienst" className="hover:text-primary">Aufsperrdienst</Link>
-            <ChevronRight className="h-3 w-3" />
-            <span className="text-text-primary">Schlüssel abgebrochen</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: "Startseite", href: "/" },
+          { label: "Aufsperrdienst", href: "/aufsperrdienst" },
+          { label: "Schlüssel abgebrochen" },
+        ]}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
@@ -261,6 +259,13 @@ export default function SchluesselAbgebrochenPage() {
           </div>
         </div>
       </section>
+
+      {/* Bezirke (reverse links) */}
+      <BezirkeLinkGrid
+        title="Schlüssel abgebrochen — Schlüsseldienst in Ihrem Bezirk"
+        intro="In welchem Bezirk ist Ihr Schlüssel abgebrochen? Wir entfernen ihn professionell — in den meisten Fällen ohne Schaden am Schloss."
+        bg="white"
+      />
 
       {/* FAQ */}
       <section className="bg-bg-secondary py-20 lg:py-28">

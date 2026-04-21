@@ -19,6 +19,8 @@ import {
 import { SECURITY_SERVICES, COMPANY, PARTNERS } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import BezirkeLinkGrid from "@/components/BezirkeLinkGrid";
 
 const iconMap: Record<string, React.ElementType> = {
   Lock,
@@ -529,31 +531,6 @@ export default async function SecurityServicePage({ params }: Props) {
     })),
   };
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://ausgesperrtwien.at",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Sicherheit",
-        item: "https://ausgesperrtwien.at/sicherheit",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: service.text,
-        item: `https://ausgesperrtwien.at/sicherheit/${slug}`,
-      },
-    ],
-  };
-
   return (
     <div className="pt-[72px]">
       {/* JSON-LD */}
@@ -565,32 +542,15 @@ export default async function SecurityServicePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
 
       {/* Breadcrumb */}
-      <div className="bg-bg-secondary">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1.5 text-sm text-text-muted">
-            <Link href="/" className="hover:text-primary transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="h-3.5 w-3.5" />
-            <Link
-              href="/sicherheit"
-              className="hover:text-primary transition-colors"
-            >
-              Sicherheit
-            </Link>
-            <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-text-primary font-medium">
-              {service.text}
-            </span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: "Startseite", href: "/" },
+          { label: "Sicherheit", href: "/sicherheit" },
+          { label: service.text },
+        ]}
+      />
 
       {/* Hero */}
       <section className="bg-primary py-16 lg:py-24">
@@ -781,6 +741,13 @@ export default async function SecurityServicePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Bezirke (reverse links) */}
+      <BezirkeLinkGrid
+        title={`${service.text} — in Ihrem Wiener Bezirk`}
+        intro={`Wir installieren ${service.text} in allen 23 Wiener Bezirken sowie Klosterneuburg. Wählen Sie Ihren Standort für Beratung und Montage:`}
+        bg="white"
+      />
 
       {/* FAQ */}
       {data.faq.length > 0 && (

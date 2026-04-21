@@ -14,6 +14,8 @@ import {
 import { COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import BezirkeLinkGrid from "@/components/BezirkeLinkGrid";
 
 export const metadata: Metadata = {
   title: "Tür zugefallen Wien — 24h Notdienst Türöffnung",
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Was kostet es, wenn die Tür zugefallen ist?",
-    a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Abends, nachts und am Wochenende gelten Notdienstpreise. Der genaue Fixpreis wird vor Beginn am Telefon vereinbart.",
+    a: "Bei einer zugefallenen Tür beträgt unser Fixpreis 79€ (Mo–Fr, 8–17 Uhr) — An- und Abfahrt inklusive. Abends, nachts und am Wochenende kommen transparente Zuschläge dazu (Abend +30€, Nacht +35€/+89€, Wochenende/Feiertag +39€). Der genaue Fixpreis wird vor Beginn am Telefon vereinbart.",
   },
   {
     q: "Wird meine Tür bei der Öffnung beschädigt?",
@@ -125,21 +127,13 @@ export default function TuerZugefallenPage() {
       />
 
       {/* Breadcrumb */}
-      <div className="bg-bg-secondary">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1 text-sm text-text-muted">
-            <Link href="/" className="hover:text-primary">
-              Home
-            </Link>
-            <ChevronRight className="h-3 w-3" />
-            <Link href="/aufsperrdienst" className="hover:text-primary">
-              Aufsperrdienst
-            </Link>
-            <ChevronRight className="h-3 w-3" />
-            <span className="text-text-primary">Tür zugefallen</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: "Startseite", href: "/" },
+          { label: "Aufsperrdienst", href: "/aufsperrdienst" },
+          { label: "Tür zugefallen" },
+        ]}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
@@ -329,6 +323,13 @@ export default function TuerZugefallenPage() {
           </div>
         </div>
       </section>
+
+      {/* Bezirke (reverse links) */}
+      <BezirkeLinkGrid
+        title="Tür zugefallen — Aufsperrdienst in Ihrem Bezirk"
+        intro="In welchem Bezirk ist Ihre Tür zugefallen? Wählen Sie Ihren Standort — wir kommen sofort."
+        bg="white"
+      />
 
       {/* FAQ */}
       <section className="bg-bg-secondary py-20 lg:py-28">

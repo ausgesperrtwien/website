@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Check, ChevronRight } from "lucide-react";
-import { COMPANY, EINSATZGEBIETE } from "@/lib/constants";
+import { COMPANY, EINSATZGEBIETE, getBezirkUrl } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
 
@@ -96,7 +96,7 @@ export default function EinsatzgebietePage() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <SectionReveal>
                 <Link
-                  href={`/einsatzgebiete/${hauptstandort.slug}`}
+                  href={getBezirkUrl(hauptstandort)}
                   className="group block overflow-hidden rounded-2xl border-2 border-primary bg-bg-accent shadow-card transition-shadow hover:shadow-lg"
                 >
                   <div className="p-8">
@@ -164,7 +164,7 @@ export default function EinsatzgebietePage() {
               {otherAreas.map((area, i) => (
                 <SectionReveal key={area.slug} delay={i * 0.03}>
                   <Link
-                    href={`/einsatzgebiete/${area.slug}`}
+                    href={getBezirkUrl(area)}
                     className="group block overflow-hidden rounded-2xl border border-border bg-white p-6 shadow-card transition-all hover:border-primary hover:shadow-lg"
                   >
                     <div className="flex items-start gap-3">

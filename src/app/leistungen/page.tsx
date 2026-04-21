@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -16,6 +17,7 @@ import {
   Lightbulb,
   Phone,
   ArrowRight,
+  Copy,
 } from "lucide-react";
 import { SERVICES, COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
@@ -112,50 +114,91 @@ export default function LeistungenPage() {
               const isEven = i % 2 === 0;
 
               return (
-                <SectionReveal key={service.title}>
-                  <div
-                    className={`flex flex-col gap-8 lg:flex-row lg:items-center ${
-                      isEven ? "" : "lg:flex-row-reverse"
-                    }`}
-                  >
-                    {/* Icon Card */}
-                    <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-bg-accent">
-                      <Icon className="h-16 w-16 text-primary" />
-                    </div>
+                <Fragment key={service.title}>
+                  <SectionReveal>
+                    <div
+                      className={`flex flex-col gap-8 lg:flex-row lg:items-center ${
+                        isEven ? "" : "lg:flex-row-reverse"
+                      }`}
+                    >
+                      {/* Icon Card */}
+                      <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-bg-accent">
+                        <Icon className="h-16 w-16 text-primary" />
+                      </div>
 
-                    {/* Content */}
-                    <div className="flex-1">
-                      <h2 className="font-heading text-2xl font-bold text-text-primary">
-                        {service.title}
-                      </h2>
-                      <p className="mt-3 text-base leading-relaxed text-text-secondary">
-                        {detailed}
-                      </p>
-                      <div className="mt-4 flex flex-wrap items-center gap-4">
-                        <Link
-                          href={`/leistungen/${service.slug}`}
-                          className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-light"
-                        >
-                          Mehr erfahren
-                          <ArrowRight className="h-4 w-4" />
-                        </Link>
-                        <a
-                          href={`tel:${COMPANY.phoneRaw}`}
-                          className="inline-flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors hover:text-primary"
-                        >
-                          <Phone className="h-4 w-4" />
-                          {COMPANY.phone}
-                        </a>
+                      {/* Content */}
+                      <div className="flex-1">
+                        <h2 className="font-heading text-2xl font-bold text-text-primary">
+                          {service.title}
+                        </h2>
+                        <p className="mt-3 text-base leading-relaxed text-text-secondary">
+                          {detailed}
+                        </p>
+                        <div className="mt-4 flex flex-wrap items-center gap-4">
+                          <Link
+                            href={`/leistungen/${service.slug}`}
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-light"
+                          >
+                            Mehr erfahren
+                            <ArrowRight className="h-4 w-4" />
+                          </Link>
+                          <a
+                            href={`tel:${COMPANY.phoneRaw}`}
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors hover:text-primary"
+                          >
+                            <Phone className="h-4 w-4" />
+                            {COMPANY.phone}
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {i < SERVICES.length - 1 && (
-                    <div className="mt-16 border-t border-border" />
+                    {i < SERVICES.length - 1 && (
+                      <div className="mt-16 border-t border-border" />
+                    )}
+                  </SectionReveal>
+
+                  {service.slug === "schluessel-verloren" && (
+                    <SectionReveal>
+                      <div className="flex flex-col gap-8 lg:flex-row-reverse lg:items-center">
+                        <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-bg-accent">
+                          <Copy className="h-16 w-16 text-primary" />
+                        </div>
+                        <div className="flex-1">
+                          <h2 className="font-heading text-2xl font-bold text-text-primary">
+                            Schlüssel nachmachen
+                          </h2>
+                          <p className="mt-3 text-base leading-relaxed text-text-secondary">
+                            Wir kopieren Wohnungs-, Sicherheits- (EVVA, ABUS, DOM
+                            mit Sperrkarte), Briefkasten-, Vorhängeschloss- und
+                            Möbelschlüssel zum Fixpreis. Schlüssel mitbringen
+                            oder per Termin anfragen — zentral in 1060 Wien.
+                          </p>
+                          <div className="mt-4 flex flex-wrap items-center gap-4">
+                            <Link
+                              href="/schluessel-nachmachen"
+                              className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-light"
+                            >
+                              Mehr erfahren
+                              <ArrowRight className="h-4 w-4" />
+                            </Link>
+                            <a
+                              href={`tel:${COMPANY.phoneRaw}`}
+                              className="inline-flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors hover:text-primary"
+                            >
+                              <Phone className="h-4 w-4" />
+                              {COMPANY.phone}
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mt-16 border-t border-border" />
+                    </SectionReveal>
                   )}
-                </SectionReveal>
+                </Fragment>
               );
             })}
+            {/* Static entry: Schlüssel nachmachen — inserted after "Schlüssel verloren" via DOM order in the rendered list */}
           </div>
         </div>
       </section>

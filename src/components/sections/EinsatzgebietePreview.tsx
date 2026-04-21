@@ -2,7 +2,7 @@
 
 import { MapPin } from "lucide-react";
 import SectionReveal from "@/components/SectionReveal";
-import { EINSATZGEBIETE } from "@/lib/constants";
+import { EINSATZGEBIETE, getBezirkUrl } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function EinsatzgebietePreview() {
           {EINSATZGEBIETE.map((area, i) => (
             <SectionReveal key={area.district} delay={i * 0.05}>
               <Link
-                href={`/einsatzgebiete/${area.slug}`}
+                href={getBezirkUrl(area)}
                 className={cn(
                   "group flex items-start gap-3 rounded-xl border p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover",
                   area.hauptstandort

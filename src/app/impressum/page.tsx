@@ -3,7 +3,7 @@ import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum von MagicKey Aufsperrdienst und Montage, Klosterneuburger Straße 7, 1200 Wien.",
+  description: "Impressum von Ausgesperrt Vienna Aufsperrdienst und Montage, Klosterneuburger Straße 7, 1200 Wien.",
 };
 
 export default function ImpressumPage() {

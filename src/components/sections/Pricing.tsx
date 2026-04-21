@@ -1,6 +1,7 @@
 "use client";
 
-import { Check } from "lucide-react";
+import Link from "next/link";
+import { Check, ChevronRight } from "lucide-react";
 import SectionReveal from "@/components/SectionReveal";
 import { PRICING_POINTS } from "@/lib/constants";
 import CounterAnimation from "@/components/CounterAnimation";
@@ -12,7 +13,7 @@ export default function Pricing() {
         <SectionReveal>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl">
-              Faire, transparente Preise
+              Schlüsseldienst Wien — Faire, transparente Preise
             </h2>
           </div>
         </SectionReveal>
@@ -30,8 +31,15 @@ export default function Pricing() {
               <span className="text-2xl font-semibold text-primary">€</span>
             </div>
             <p className="mt-2 text-sm text-text-secondary">
-              Mo bis Fr, 8–18 Uhr
+              Mo bis Fr, 8–17 Uhr
             </p>
+            <Link
+              href="/preise"
+              className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+            >
+              Komplette Preisliste ansehen
+              <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
         </SectionReveal>
 

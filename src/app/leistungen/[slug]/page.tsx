@@ -25,6 +25,8 @@ import {
 import { SERVICES, COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import BezirkeLinkGrid from "@/components/BezirkeLinkGrid";
 
 const iconMap: Record<string, React.ElementType> = {
   DoorOpen,
@@ -87,7 +89,7 @@ const serviceData: Record<
       { step: "Fertig", text: "Sie sind wieder in Ihrer Wohnung — zum vereinbarten Fixpreis, ohne Überraschungen." },
     ],
     faq: [
-      { q: "Was kostet eine Türöffnung in Wien?", a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 79€ (Mo–Fr, 8–18 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart." },
+      { q: "Was kostet eine Türöffnung in Wien?", a: "Bei einer zugefallenen Tür beginnen unsere Preise ab 79€ (Mo–Fr, 8–17 Uhr). Der genaue Fixpreis wird vorab am Telefon vereinbart." },
       { q: "Wird meine Tür bei der Öffnung beschädigt?", a: "In über 95% der Fälle können wir Ihre Tür beschädigungsfrei öffnen. Sollte ausnahmsweise ein anderer Weg nötig sein, besprechen wir das vorher mit Ihnen." },
       { q: "Wie schnell sind Sie bei einer Türöffnung vor Ort?", a: "In der Regel sind wir in 15–20 Minuten bei Ihnen. Die genaue Wartezeit teilen wir Ihnen am Telefon mit." },
     ],
@@ -575,26 +577,13 @@ export default async function ServicePage({ params }: Props) {
       />
 
       {/* Breadcrumb */}
-      <div className="bg-bg-secondary">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1.5 text-sm text-text-muted">
-            <Link href="/" className="hover:text-primary transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="h-3.5 w-3.5" />
-            <Link
-              href="/leistungen"
-              className="hover:text-primary transition-colors"
-            >
-              Leistungen
-            </Link>
-            <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-text-primary font-medium">
-              {service.title}
-            </span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: "Startseite", href: "/" },
+          { label: "Leistungen", href: "/leistungen" },
+          { label: service.title },
+        ]}
+      />
 
       {/* Hero */}
       <section className="bg-primary py-16 lg:py-24">
@@ -766,6 +755,13 @@ export default async function ServicePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Bezirke (reverse links) */}
+      <BezirkeLinkGrid
+        title={`${service.title} — in Ihrem Wiener Bezirk`}
+        intro={`Wir bieten ${service.title} in allen 23 Wiener Bezirken sowie Klosterneuburg. Wählen Sie Ihren Standort:`}
+        bg="white"
+      />
 
       {/* FAQ */}
       {data.faq.length > 0 && (

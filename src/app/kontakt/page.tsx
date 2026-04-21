@@ -9,7 +9,7 @@ import Contact from "@/components/sections/Contact";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Ausgesperrt Vienna Schlüsseldienst Wien. ☎ +43 676 911 14 12. Klosterneuburger Straße 7, 1200 Wien. 24/7 erreichbar.",
+    "Kontaktieren Sie Ausgesperrt Vienna Schlüsseldienst Wien. ☎ +43 660 172 63 00. Klosterneuburger Straße 7, 1200 Wien. 24/7 erreichbar.",
 };
 
 export default function KontaktPage() {

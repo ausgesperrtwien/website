@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SERVICES, EINSATZGEBIETE, SECURITY_SERVICES } from "@/lib/constants";
+import { SERVICES, EINSATZGEBIETE, SECURITY_SERVICES, getBezirkUrl } from "@/lib/constants";
 
 const BASE_URL = "https://ausgesperrtwien.at";
 
@@ -44,6 +44,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/preise`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/schluesseldienst-wien`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${BASE_URL}/schluessel-nachmachen`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
       url: `${BASE_URL}/blog`,
@@ -102,7 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /* ── Einsatzgebiete (district) sub-pages ──────────────── */
 
   const districtPages: MetadataRoute.Sitemap = EINSATZGEBIETE.map((e) => ({
-    url: `${BASE_URL}/einsatzgebiete/${e.slug}`,
+    url: `${BASE_URL}${getBezirkUrl(e)}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,

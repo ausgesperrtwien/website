@@ -55,13 +55,13 @@ export default function Hero() {
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
               Ausgesperrt?{" "}
               <span className="text-gold-light">
-                Wir sind in 15 bis 20 Minuten bei Ihnen.
+                Ihr Schlüsseldienst Wien ist in 15–20 Minuten bei Ihnen.
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
-              Ihr zuverlässiger Schlüsseldienst in Wien. Faire Fixpreise, keine
+              Ihr zuverlässiger Aufsperrdienst Wien — faire Fixpreise, keine
               versteckten Kosten. Tag und Nacht für Sie im Einsatz.
             </p>
 

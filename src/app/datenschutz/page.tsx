@@ -3,7 +3,7 @@ import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
-  description: "Datenschutzerklärung von MagicKey Aufsperrdienst und Montage gemäß DSGVO.",
+  description: "Datenschutzerklärung von Ausgesperrt Vienna Aufsperrdienst und Montage gemäß DSGVO.",
 };
 
 export default function DatenschutzPage() {

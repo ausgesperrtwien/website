@@ -13,6 +13,8 @@ import {
 import { COMPANY } from "@/lib/constants";
 import CallButton from "@/components/CallButton";
 import SectionReveal from "@/components/SectionReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import BezirkeLinkGrid from "@/components/BezirkeLinkGrid";
 
 export const metadata: Metadata = {
   title: "Nach Einbruch Wien — 24h Notdienst Schloss tauschen",
@@ -120,17 +122,13 @@ export default function NachEinbruchPage() {
       />
 
       {/* Breadcrumb */}
-      <div className="bg-bg-secondary">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1 text-sm text-text-muted">
-            <Link href="/" className="hover:text-primary">Home</Link>
-            <ChevronRight className="h-3 w-3" />
-            <Link href="/aufsperrdienst" className="hover:text-primary">Aufsperrdienst</Link>
-            <ChevronRight className="h-3 w-3" />
-            <span className="text-text-primary">Nach Einbruch</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: "Startseite", href: "/" },
+          { label: "Aufsperrdienst", href: "/aufsperrdienst" },
+          { label: "Nach Einbruch" },
+        ]}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
@@ -297,6 +295,13 @@ export default function NachEinbruchPage() {
           </div>
         </div>
       </section>
+
+      {/* Bezirke (reverse links) */}
+      <BezirkeLinkGrid
+        title="Hilfe nach Einbruch — in Ihrem Bezirk"
+        intro="In welchem Wiener Bezirk wurde eingebrochen? Wir machen Ihre Tür sofort wieder verschließbar — 24/7 in ganz Wien."
+        bg="white"
+      />
 
       {/* FAQ */}
       <section className="bg-bg-secondary py-20 lg:py-28">
